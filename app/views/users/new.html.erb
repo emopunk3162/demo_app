@@ -1,1 +1,42 @@
 <h1> Sign up </h1>
+
+	<%= form_for @user, html: { class: "form-horizonta" } do |f| %>
+	
+	<div class="control-group">
+    		<label class="control-label">Name</label>
+   	 		<div class="controls">
+   	 			<%= f.text_field :name %>
+    	</div>
+    </div>
+
+    <div class="control-group">
+   		 	<label class="control-label">Email</label>
+    		<div class="controls">
+    			<%= f.text_field :email %>
+    	</div>
+    </div>
+
+    <div class="control-group">
+    	<label class="control-label">Password</label>
+    	<div class="controls">
+    		<%= f.password_field :password %>
+    	</div>
+    </div>
+
+    <div class="control-group">
+    	<label class="control-label">Password Confirmation</label>
+    	<div class="controls">
+    		<%= f.password_field :password_confirmation %>
+    	</div>
+    </div>
+
+
+    <div class="control-group">
+    	<div class="controls">
+    	<%= f.submit "Sign up", class: 'btn' %>
+    	</div>
+    </div>
+<% end %>
+
+ 
+

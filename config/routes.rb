@@ -1,6 +1,6 @@
 DemoApp::Application.routes.draw do
 
-  get "users/new"
+  resources :users
   match '/signup',to: 'users#new' # signup_path
   # The priority is based upon order of creation:
   # first created -> highest priority.
